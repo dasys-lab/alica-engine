@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Styles */
+
+body {
+    font: 16px/1.4 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    margin: 0.6em 0;
+    word-wrap: break-word;
+}
+
+h1 { font-size: 170% }
+h2 { font-size: 130% }
+h3 { font-size: 110% }
+
+h1:first-child { margin-top: 0 }
+h2:first-child { margin-top: 0 }
+h3:first-child { margin-top: 0 }
+h4:first-child { margin-top: 0 }
+h5:first-child { margin-top: 0 }
+h6:first-child { margin-top: 0 }
+
+#sidebar {
+    width: 20em;
+    padding: 2em;
+    position: absolute;
+    font-size: 15px;
+    top: 0;
+    left: 0;
+}
+
+#sidebar > h3 {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+#content {
+    margin-left: 24em;
+    padding: 1.5em 0 2em 0;
+    max-width: 55em;
+    margin-right: 2em;
+}
+
+#content a {
+    text-decoration: none;
+    color: lightseagreen;
+}
+
+pre {
+    background: #333;
+    color: #fff;
+    padding: 0.5em;
+}
+
+pre code {
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+}
+
+.section {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.section h2 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 2px;
+}
+
+.namespaces {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.namespaces li {
+    padding: 0;
+    margin: 2px 0;
+}
+
+.namespaces a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 4px;
+}
+
+.namespaces a:hover {
+    background: #eee;
+}
+
+
+.description .para {
+    margin-bottom: 0.6em;
+}
+
+/* Type colors */
+.compound.class .title .accent {
+    color: deeppink;
+}
+
+.compound.struct .title .accent {
+    color: darkorange;
+}
+
+.compound.namespace .title .accent {
+    color: royalblue;
+}
+
+
+.classes .class {
+    padding: 2px 0;
+}
+
+.classes a {
+    color: #333;
+    text-decoration: none;
+}
+
+.classes a:hover {
+    color: deeppink;
+}
+
+.member {
+    margin-bottom: 0.8em;
+}
+
+.member .name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.member .argsstring {
+    color: #777;
+}
+
+.member .description {
+    font-size: 16px;
+    color: #222;
+    padding-left: 1.5em;
+}
+
+.member .type {
+    color: #777;
+}
+
+.member .initializer {
+    color: #777;
+}
+
+/* Print style */
+
+@media print {
+    #sidebar {
+        display: none;
+    }
+
+    #content {
+        margin-left: 5em;
+        width: 70em;
+    }
+
+    .section h2 {
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 2px;
+    }
+
+    .member .description {
+        color: #000;
+    }
+}
